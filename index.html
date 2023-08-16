@@ -46,7 +46,32 @@
                   </li>
                 </ul>
                 <!-- sign in  -->
-                <button type="button" class="btn b-cm b-h">Sign in</button>
+                <button type="button" data-bs-target="#sign" data-bs-toggle="modal" class="btn b-cm b-h">Sign in</button>
+                
+                <div class="modal" id="sign">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="container">
+                      <div class="modal-body">
+                        <form action="#">
+                          <label for="name">Name:</label><br>
+                          <input type="text" placeholder="Enter your name" required><br>
+
+                          <label for="email">Email:</label><br>
+                          <input type="email" placeholder="Enter your email" required><br>
+
+                          <label for="password">Password:</label><br>
+                          <input type="password" placeholder="Enter your password" required><br><br>
+
+                          <button type="submit" class="btn btn-primary">Sign In</button>
+                          <button type="reset" class="btn btn-secondary">Reset</button>
+
+                        </form>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </nav>
